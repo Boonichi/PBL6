@@ -1,0 +1,249 @@
+#ja-cssmenu {
+	margin: 0; /* all lists */
+	padding: 0;
+}
+
+#ja-cssmenu ul {
+	margin: 0; /* all lists */
+	padding: 0;
+}
+
+#ja-cssmenu li {
+	margin: 0; /* all list items */
+	padding: 0 2px 0 0;
+	float: left;
+	display: block;
+	background: url(mainnav-sep-2.gif) repeat-y right;
+	cursor: pointer;
+}
+
+#ja-cssmenu li ul {
+	width: 16.4em;
+	position: absolute; /* second-level lists */
+	z-index: 99;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	height: auto;
+	w\idth: 15.9em;
+}
+
+#ja-cssmenu li ul ul {
+	margin: -2em 0 0 15em; /* third-and-above-level lists */
+}
+
+#ja-cssmenu li li {
+	padding: 0 1em 0 0;
+	margin: 0;
+	width: 14.9em;
+}
+
+#ja-cssmenu ul a {
+	width: 14.8em;
+	w\idth: 10.8em;
+}
+
+#ja-cssmenu li:hover ul ul, #ja-cssmenu li:hover ul ul ul,
+#ja-cssmenu li.sfhover ul ul, #ja-cssmenu li.havechildsfhover ul ul, #ja-cssmenu li.havechild-activesfhover ul ul, #ja-cssmenu li.activesfhover ul ul,
+#ja-cssmenu li.sfhover ul ul ul, #ja-cssmenu li.havechildsfhover ul ul ul, #ja-cssmenu li.havechild-activesfhover ul ul ul, #ja-cssmenu li.activesfhover ul ul ul {
+	left: -999em;
+}
+
+/* This "unhides" the sub-menus (left: -999em is what hides them) */
+#ja-cssmenu li:hover ul, #ja-cssmenu li li:hover ul, #ja-cssmenu li li li:hover ul,
+#ja-cssmenu li.sfhover ul, #ja-cssmenu li.havechildsfhover ul, #ja-cssmenu li.havechild-activesfhover ul, #ja-cssmenu li.activesfhover ul,
+#ja-cssmenu li li.sfhover ul, #ja-cssmenu li li.havesubchildsfhover ul, #ja-cssmenu li li.havesubchild-activesfhover ul, #ja-cssmenu li li.activesfhover ul,
+#ja-cssmenu li li li.sfhover ul, #ja-cssmenu li li li.havesubchildsfhover ul, #ja-cssmenu li li li.havesubchild-activesfhover ul, #ja-cssmenu li li li.activesfhover ul {
+	left: auto;
+}
+
+/* STYLING THE MENU
+-----------------------------------*/
+/* 1st level */
+#ja-cssmenu li a {
+	display: block;
+	text-decoration: none;
+	font-size: 92%;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #999999;
+	padding: 0 20px;
+	line-height: 42px;
+}
+
+#ja-cssmenu li a:hover,
+#ja-cssmenu li a:active,
+#ja-cssmenu li a:focus {
+	color: #CCCCCC;
+}
+
+#ja-cssmenu li:hover a,
+#ja-cssmenu li.sfhover a,
+#ja-cssmenu li.havechildsfhover a,
+#ja-cssmenu li.havechild-activesfhover a {
+	background: url(mainnav-hover-2.gif) repeat-x top #333333;
+	color: #FFFFFF;
+}
+
+#ja-cssmenu li a.active,
+#ja-cssmenu li a.active:hover,
+#ja-cssmenu li a.active:active,
+#ja-cssmenu li a.active:focus {
+	background: url(mainnav-active-2.gif) repeat-x top #ff9f00;
+	color: #FFFFFF;
+}
+
+/* 2nd level and above */
+#ja-cssmenu li ul {
+	border: 2px solid #333333;
+	background: url(grad-3.gif) repeat-x top #2F2F2F;
+}
+
+#ja-cssmenu li ul ul {
+	border: 1px solid #333333;
+}
+
+#ja-cssmenu li ul li {
+	border-bottom: 1px solid #1D1D1D;
+	border-top: 1px solid #404040;
+	border-right: none;
+	background: none;
+}
+
+#ja-cssmenu li ul a {
+	border-right: none;
+	margin: 0;
+	padding: 7px 10px;
+	background: none !important;
+	text-transform: none;
+	font-weight: normal;
+	white-space: nowrap;
+	height: auto;
+	line-height: normal;
+	color: #999999 !important;
+}
+
+#ja-cssmenu li.havesubchild,
+#ja-cssmenu li.havesubchild-active {
+	background: url(arrow-1.gif) no-repeat 95% 50%;
+}
+
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus,
+#ja-cssmenu ul li:hover,
+#ja-cssmenu ul li.sfhover,
+#ja-cssmenu ul li.havesubchildsfhover,
+#ja-cssmenu ul li.havesubchild-activesfhover,
+#ja-cssmenu ul ul li:hover,
+#ja-cssmenu ul ul li.sfhover,
+#ja-cssmenu ul ul li.havesubchildsfhover,
+#ja-cssmenu ul ul li.havesubchild-activesfhover {
+	background: #404040;
+	color: #FFFFFF !important;
+}
+
+#ja-cssmenu ul li a.active {
+	background: none !important;
+	color: #FFCC00 !important;
+	font-weight: bold !important;
+}
+
+#ja-cssmenu ul li a.active:hover,
+#ja-cssmenu ul li a.active:active,
+#ja-cssmenu ul li a.active:focus {
+	color: #FFFFFF !important;
+}
+
+
+/* Menu template CSS */
+
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnav {
+	padding: 0 10px;
+	height: 42px;
+	background: url(mainnav-bg.gif) repeat-x top #000000;
+	position: relative;
+	z-index: 999;
+	outline: none;
+	line-height: normal;
+}
+
+ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+ul.menu li {
+	display: block;
+	background: url(sep.gif) repeat-x bottom;
+	margin: 0;
+	padding: 0 0 2px;
+	line-height: normal;
+}
+
+ul.menu li a {
+	display: block;
+	outline: none;
+	padding: 8px 2px;
+	margin: 0;
+	text-decoration: none;
+	color: #CCCCCC;
+	font-weight: bold;
+}
+
+ul.menu li a:hover,
+ul.menu li a:active,
+ul.menu li a:focus {
+	color: #FFCC00;
+	text-decoration: underline;
+}
+
+ul.menu li.active a {
+	font-weight: bold;
+}
+
+ul.menu li ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li li {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+ul.menu li li a {
+	border: none;
+	padding: 2px 5px 8px 15px !important;
+	text-transform: none;
+	font-weight: normal !important;
+	background: url(arrow.png) no-repeat 8px 6px !important;
+	color: #FFFFFF;
+}
+
+ul.menu li li a:hover,
+ul.menu li li a:active,
+ul.menu li li a:focus {
+	color: #FFCC00;
+	text-decoration: underline;
+}
+
+ul.menu li li.active a {
+	color: #FFCC00;
+	font-weight: bold;
+}
+
+ul.menu li li li a {
+	color: #CCCCCC !important;
+	font-weight: normal !important;
+	padding-left: 25px !important;
+	background: url(arrow.png) no-repeat 18px 6px !important;
+}
+
+ul.menu li li li.active a {
+	font-weight: bold !important;
+}

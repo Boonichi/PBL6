@@ -1,0 +1,222 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+body{
+margin-top:0px;
+margin-left:0px;
+margin-right:0px;
+margin-bottom:0px;
+background-color:#247DAB;
+FONT-SIZE: 11px;
+COLOR: #1A76B7; 
+FONT-FAMILY: Tahoma, Verdana, Arial;
+}
+tbody{
+FONT-SIZE: 11px;
+FONT-FAMILY: Tahoma, Verdana, Arial;
+}
+A:link {
+	COLOR: #07519A; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #07519A; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #07519A; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #3bac00; TEXT-DECORATION: underline
+}
+
+#all
+{
+width:990px;
+margin:0 auto;
+margin-top:0px;
+background-color:#fff;
+}
+#header
+{
+  margin-top:-14px;
+}
+#banner{
+height:130px;
+background-color: #0099FF;
+margin-top:0px;
+}
+#menu{
+height:30px;
+background:#FFF url(cellbanner.jpg) repeat-x;
+
+}
+.menu_left
+{
+float:right;
+padding-right:15px;
+line-height:30px;
+font-family:Verdana;
+font-size:12px;
+color:#003399;
+font-weight:bold;
+
+}
+#nav{
+height:88px;
+padding-top:0px;
+
+}
+/* Main */
+
+.main		{
+width: 990px;
+margin:0 auto;
+}
+
+
+.main_l	{
+margin:10px auto;
+width: 200px;
+float: left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+
+}
+.main_c	{
+width: 580px;
+float: left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main_r	{
+margin:0px auto;
+width: 200px;
+float: right;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+
+}
+/* End main */
+#footer{
+clear:both;
+height:70px;
+background-color:#FFCCCC;
+}
+.footer_pages
+{
+text-align:center;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+line-height:19px;
+font-weight:700;
+}
+
+/* boder table */
+.table_border
+{
+	border-collapse: collapse;
+}
+.border_div
+{
+	border:#018BFF solid 1px;
+	height:130px;
+	padding-top:20px;
+	font-size:14px;
+}
+/*  giá san phẩm */
+.giaban{
+color:#FF0000;
+font-size:1em;
+font-weight:700;
+line-height:25px;
+}
+/* font phân trang */
+.phantrang{
+font-size:16px;
+}
+.p_curr
+{
+font-size:18px;
+color:#FF0000;
+}
+.phansp{
+
+}
+.chitiet_img img
+{
+	padding-left:10px; 
+	padding-right:10px;
+	width:150px;
+	height:150px;
+	float:right;
+
+	
+}
+
+.chitiet_sp h2{
+font:Geneva, Arial, Helvetica, sans-serif;
+color:#0000CC;
+font-size:15px;
+text-align:center;	
+}
+.chitiet_sp h4{
+font:Geneva, Arial, Helvetica, sans-serif;
+color:#0000CC;
+font-size:13px;
+font-weight:200;
+text-align:center;	
+}
+.chitiet_sp h3{
+font:Geneva, Arial, Helvetica, sans-serif;
+color:#FF9933;
+font-size:13px;
+font-weight:200;
+text-align:center;
+line-height:12px;
+}
+.chitiet_sp h5{
+border-top:#0000CC dotted 1px;
+border-bottom:#0000CC dotted 1px;
+font-size:12px;
+color:#0000FF;
+padding-left:25px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+line-height:16px;
+}
+.chitiet_sp p{
+border-top:#0000CC dotted 1px;
+border-bottom:#0000CC dotted 1px;
+font-size:13px;
+color:#0000FF;
+padding-left:25px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+line-height:30px;
+}
+
+/* khung tim kiem trong frame */
+.khung_search {
+	padding-left:15px;
+	color: #6699FF;
+	font-weight: bold;
+	font-size: 12px;
+}
+.khung_search_chon {
+	color:#0033FF;
+	font-weight:300;
+	font-size: 11px;
+	line-height:40px;
+}
+.ketqua_search
+{
+	color:#999999;
+	font-weight:300;
+	font-size: 15px;
+	line-height:40px;
+	padding-left:15px;
+}
+#giohang
+{
+	height:50px;
+	text-align:center;
+	padding-top:25px;
+	font-size:15px;
+
+}
